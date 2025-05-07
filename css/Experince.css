@@ -1,0 +1,151 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+}
+.wrapper {
+    width: 1024px;
+    margin: auto;
+}
+
+.logo {
+    margin-top: 15px;
+}
+
+/*
+* menu
+*/
+
+nav {
+    background-color: rgb(8, 8, 8);
+    color: #fff;
+    position: static;
+    top: 0;
+    z-index: 100;
+    height: 50px;
+}
+nav > .wrapper {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1,2rem;
+}
+
+.menu {
+    width: 50%;
+    margin-top: 15px;
+}
+
+.menu > ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    justify-content: space-between;
+}
+
+.menu > ul > li > a {
+    text-decoration: none;
+    color: #fff;
+}
+
+header {
+    background: url("../img/bacground.jpg");
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    letter-spacing: 3px;
+    
+}
+
+.header-opacity {
+    background-color: #222822;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.header-jumbotrom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.header-jumbotrom > h1 {
+    color: #fff;
+    font-size: 1rem;
+    margin: 0px;
+    padding: 0px;
+    text-align: justify;
+    right: 250px;
+    width: 500px;
+}
+
+img {
+    width: 20%;
+    height: 40%;
+    position: absolute;
+    align-items: flex-start;
+    margin-left: 10%;
+    margin-top: 15%;
+    border-radius: 20px;
+}
+
+/* Import font modern */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+.judul {
+  color: #05ff65;
+  margin-bottom: 2rem;
+  text-align: center; 
+}
+
+.kotak-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.kotak {
+  width: 300px;
+  height: 350px;
+  border: 3px solid #05ff65;
+  border-radius: 5rem;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* box-shadow: 0 4px 12px rgba(1, 250, 22, 0.08); */
+  transition: transform 0.3s;
+  margin-top: 10%;
+}
+
+.kotak:hover {
+  transform: scale(1.05);
+}
+
+.kotak p {
+  font-size: 1.1rem;
+  color: #000000;
+  font-weight: 600;
+  margin-top: 0%;
+}
